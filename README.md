@@ -1,14 +1,15 @@
-# **MySQL: DDL Commands, Constraints, DML Operations, Joins, and Unions**
+# **MySQL: DDL Commands, Constraints, DML Operations, Joins, Unions, and Advanced Features**
 
 ## **Project Overview**
 
-This repository demonstrates the use of **Data Definition Language (DDL)** commands, **constraints**, and **Data Manipulation Language (DML)** operations in MySQL. Additionally, it explores **Joins** and **Unions** for retrieving and combining data across multiple tables.
+This repository demonstrates the use of **Data Definition Language (DDL)** commands, **constraints**, and **Data Manipulation Language (DML)** operations in MySQL. Additionally, it explores advanced MySQL features like **Joins**, **Unions**, **Functions**, **Subqueries**, **Views**, **Stored Procedures**, and **Triggers**.
 
-- **DDL Commands**: `CREATE`, `ALTER`, `DROP`, `RENAME`, and `TRUNCATE` are used to define and manage the structure of database objects like tables, schemas, and indexes.  
+- **DDL Commands**: Used to define and manage the structure of database objects like tables, schemas, and indexes.  
 - **Constraints**: Help enforce data integrity and ensure consistency within the database.  
 - **DML Operations**: Focus on manipulating data in tables, including inserting, updating, deleting, and retrieving data.  
-- **Joins**: Combine data from multiple tables based on related columns.  
-- **Unions**: Combine the results of two or more `SELECT` queries into a single result set.
+- **Joins and Unions**: Combine and retrieve data from multiple tables.  
+- **Functions and Subqueries**: Provide reusable logic and complex data retrieval.  
+- **Views, Stored Procedures, and Triggers**: Enhance reusability, automation, and efficiency in database operations.  
 
 ---
 
@@ -36,8 +37,8 @@ This repository demonstrates the use of **Data Definition Language (DDL)** comma
 - **SELECT**: Retrieves data from one or more tables.  
 - **MERGE/REPLACE**: Combines data manipulation logic (if supported by the DBMS).  
 
-### **4. Joins**  
-Joins are used to retrieve data from multiple tables based on a related column.
+### **4. Joins**
+Joins are used to retrieve data from multiple tables based on a related column.  
 
 - **INNER JOIN**: Retrieves records that have matching values in both tables.  
 - **LEFT JOIN (LEFT OUTER JOIN)**: Retrieves all records from the left table and matching records from the right table.  
@@ -47,5 +48,40 @@ Joins are used to retrieve data from multiple tables based on a related column.
 
 ### **5. Unions**
 Unions combine the results of two or more `SELECT` queries into a single result set.  
+
 - **UNION**: Combines results while removing duplicates.  
 - **UNION ALL**: Combines results and includes duplicates.  
+
+### **6. Functions**
+Functions in MySQL are reusable blocks of code that perform operations and return a value.  
+
+- **Built-in Functions**: `SUM()`, `AVG()`, `COUNT()`, `NOW()`, `ROUND()`, etc.  
+- **User-defined Functions (UDFs)**: Custom functions created by the user using the `CREATE FUNCTION` statement.  
+
+
+### **7. Subqueries**
+Subqueries are nested queries used to perform complex operations.  
+
+- **Single-row Subqueries**: Return a single value.  
+- **Multi-row Subqueries**: Return multiple values.  
+- **Correlated Subqueries**: Refer to columns in the outer query.  
+
+
+### **8. Views**
+Views are virtual tables created using `SELECT` queries.  
+
+- **CREATE VIEW**: Define a view.  
+- **DROP VIEW**: Remove a view.  
+
+### **9. Stored Procedures**
+Stored procedures are precompiled SQL statements that can be executed as a single unit.  
+
+- **CREATE PROCEDURE**: Define a procedure.  
+- **CALL**: Execute a procedure.  
+- **DROP PROCEDURE**: Remove a procedure.  
+
+### **10. Triggers**
+Triggers are automatically executed in response to certain events on a table (e.g., `INSERT`, `UPDATE`, `DELETE`).  
+
+- **BEFORE Trigger**: Executes before the specified event.  
+- **AFTER Trigger**: Executes after the specified event.  
